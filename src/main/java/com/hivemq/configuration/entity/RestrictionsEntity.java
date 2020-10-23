@@ -45,6 +45,7 @@ public class RestrictionsEntity {
     @XmlElement(name = "no-connect-idle-timeout", defaultValue = "10000")
     private @NotNull Long noConnectIdleTimeout = NO_CONNECT_IDLE_TIMEOUT_DEFAULT;
 
+    // 入网带宽限流
     @XmlElement(name = "incoming-bandwidth-throttling", defaultValue = "0")
     private @NotNull Long incomingBandwidthThrottling = INCOMING_BANDWIDTH_THROTTLING_DEFAULT;
 

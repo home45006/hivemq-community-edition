@@ -124,6 +124,7 @@ public class HiveMQServer {
         final HivemqId hiveMQId = new HivemqId();
         log.info("This HiveMQ ID is {}", hiveMQId.get());
 
+        // 清除异常关闭时未清除的临时文件
         //ungraceful shutdown does not delete tmp folders, so we clean them up on broker start
         log.trace("Cleaning up temporary folders");
         TemporaryFileUtils.deleteTmpFolder(systemInformation.getDataFolder());

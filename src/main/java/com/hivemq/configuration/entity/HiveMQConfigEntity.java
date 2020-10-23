@@ -31,22 +31,28 @@ import java.util.List;
 @SuppressWarnings({"FieldMayBeFinal", "FieldCanBeLocal"})
 public class HiveMQConfigEntity {
 
+    // TCP监听实体类
     @XmlElementWrapper(name = "listeners", required = true)
     @XmlElementRef(required = false)
     private @NotNull List<ListenerEntity> listeners = new ArrayList<>();
 
+    // MQTT配置实体类
     @XmlElementRef(required = false)
     private @NotNull MqttConfigEntity mqtt = new MqttConfigEntity();
 
+    // 限制实体类
     @XmlElementRef(required = false)
     private @NotNull RestrictionsEntity restrictions = new RestrictionsEntity();
 
+    // 安全配置
     @XmlElementRef(required = false)
     private @NotNull SecurityConfigEntity security = new SecurityConfigEntity();
 
+    // 使用情况统计
     @XmlElementRef(required = false)
     private @NotNull UsageStatisticsEntity usageStatistics = new UsageStatisticsEntity();
 
+    // 数据持久化方式
     @XmlElementRef(required = false)
     private @NotNull PersistenceEntity persistence = new PersistenceEntity();
 

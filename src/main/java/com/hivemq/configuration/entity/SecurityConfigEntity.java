@@ -35,12 +35,14 @@ import javax.xml.bind.annotation.XmlRootElement;
 @SuppressWarnings({"FieldMayBeFinal", "FieldCanBeLocal"})
 public class SecurityConfigEntity {
 
+    // payload格式校验
     @XmlElementRef(required = false)
     private @NotNull PayloadFormatValidationEntity payloadFormatValidationEntity = new PayloadFormatValidationEntity();
 
     @XmlElementRef(required = false)
     private @NotNull UTF8ValidationEntity utf8ValidationEntity = new UTF8ValidationEntity();
 
+    // 是否允许空clientId接入
     @XmlElementRef(required = false)
     private @NotNull AllowEmptyClientIdEntity allowEmptyClientIdEntity = new AllowEmptyClientIdEntity();
 
