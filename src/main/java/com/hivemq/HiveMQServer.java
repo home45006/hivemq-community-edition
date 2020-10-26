@@ -172,6 +172,7 @@ public class HiveMQServer {
         }
         final HiveMQServer instance = injector.getInstance(HiveMQServer.class);
 
+        // 显式触发垃圾回收
         if (InternalConfigurations.GC_AFTER_STARTUP) {
             log.trace("Starting initial garbage collection after startup");
             final long start = System.currentTimeMillis();
@@ -186,7 +187,10 @@ public class HiveMQServer {
 
         /* It's important that we are modifying the log levels after Guice is initialized,
         otherwise this somehow interferes with Singleton creation */
+        // Guice初始化完成后再修改日志级别, 否则会影响单例的创建
         LoggingBootstrap.addLoglevelModifiers();
+
+        // 启动mqtt
         instance.start(null);
 
         if (ShutdownHooks.SHUTTING_DOWN.get()) {
@@ -199,6 +203,7 @@ public class HiveMQServer {
             return;
         }
 
+        // 使用情况统计
         final UsageStatistics usageStatistics = injector.getInstance(UsageStatistics.class);
         usageStatistics.start();
     }
