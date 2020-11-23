@@ -268,6 +268,7 @@ public class ExtensionLoaderImpl implements ExtensionLoader {
         }
 
         //load the extension
+        // 加载插件
         final HiveMQExtension hiveMQExtension = loadSingleExtension(extensionFolder, xmlEntity, desiredClass);
 
         if (hiveMQExtension == null) {

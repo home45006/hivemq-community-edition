@@ -363,6 +363,7 @@ public class InternalConfigurations {
      **********************/
     /**
      * Denies the bypassing of authentication if no authenticator is registered
+     * 如果未注册身份验证器，则拒绝绕过身份验证
      */
     public static final AtomicBoolean AUTH_DENY_UNAUTHENTICATED_CONNECTIONS = new AtomicBoolean(true);
 

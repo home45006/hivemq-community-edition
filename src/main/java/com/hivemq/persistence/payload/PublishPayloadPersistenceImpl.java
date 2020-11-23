@@ -90,6 +90,7 @@ public class PublishPayloadPersistenceImpl implements PublishPayloadPersistence 
     }
 
     // The payload persistence has to be initialized after the other persistence bootstraps are finished.
+    // 其他持久性引导程序完成后，必须初始化有效负载持久性。
     @Override
     public void init() {
         final long removeDelay = InternalConfigurations.PAYLOAD_PERSISTENCE_CLEANUP_DELAY.get();
@@ -99,6 +100,8 @@ public class PublishPayloadPersistenceImpl implements PublishPayloadPersistence 
             final long initialSchedule = removeSchedule * i;
             // We schedule an amount of tasks equal to the amount of clean up threads. The rate is a configured value multiplied by the thread count.
             // Therefor all threads in the pool should be running simultaneously on high load.
+            // 我们计划的任务数量等于清理线程的数量。速率是配置值乘以线程计数。
+            // 因此，池中的所有线程应在高负载下同时运行
             if (!scheduledExecutorService.isShutdown()) {
                 removeTaskFuture = scheduledExecutorService.scheduleAtFixedRate(
                         new RemoveEntryTask(payloadCache, localPersistence, bucketLock, removablePayloads, removeDelay,

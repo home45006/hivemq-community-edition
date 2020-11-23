@@ -76,6 +76,7 @@ public class ExtensionBootstrapImpl implements ExtensionBootstrap {
         final Path extensionFolder = systemInformation.getExtensionsFolder().toPath();
 
         //load already installed extensions
+        // 加载已安装的插件
         final ImmutableList<HiveMQExtensionEvent> hiveMQExtensionEvents = extensionLoader.loadExtensions(extensionFolder, systemInformation.isEmbedded(), ExtensionMain.class);
 
         final ImmutableList.Builder<HiveMQExtensionEvent> extensionEventBuilder = ImmutableList.<HiveMQExtensionEvent>builder().addAll(hiveMQExtensionEvents);
@@ -90,8 +91,9 @@ public class ExtensionBootstrapImpl implements ExtensionBootstrap {
         final ImmutableList<HiveMQExtensionEvent> allExtensions = extensionEventBuilder.build();
 
         //start them if needed
-        return lifecycleHandler.handleExtensionEvents(allExtensions)
-                .thenAccept(((v) -> authenticators.checkAuthenticationSafetyAndLifeness()));
+        final CompletableFuture<Void> voidCompletableFuture =
+                lifecycleHandler.handleExtensionEvents(allExtensions).thenAccept(v -> {accept(v);});
+        return voidCompletableFuture;
     }
 
     @Override
@@ -110,6 +112,8 @@ public class ExtensionBootstrapImpl implements ExtensionBootstrap {
         lifecycleHandler.handleExtensionEvents(events).join();
         // not checking for authenticator safety
     }
+
+    private void accept(Void v) {authenticators.checkAuthenticationSafetyAndLifeness();}
 
     private static class ExtensionSystemShutdownHook extends HiveMQShutdownHook {
 

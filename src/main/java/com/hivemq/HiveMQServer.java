@@ -83,6 +83,7 @@ public class HiveMQServer {
 
         payloadPersistence.init();
 
+        // 插件加载
         final CompletableFuture<Void> extensionStartFuture = extensionBootstrap.startExtensionSystem(embeddedExtension);
         extensionStartFuture.get();
 
@@ -106,19 +107,24 @@ public class HiveMQServer {
         final SystemInformationImpl systemInformation;
         LoggingBootstrap.prepareLogging();
 
-        log.info("Starting HiveMQ Community Edition Server");
+//        log.info("Starting HiveMQ Community Edition Server");
+        log.info("启动HiveMQ社区版服务器");
 
-        log.trace("Initializing HiveMQ home directory");
+//        log.trace("Initializing HiveMQ home directory");
+        log.trace("初始化HiveMQ主目录");
         //Create SystemInformation this early because logging depends on it
+        // 尽早创建SystemInformation，因为日志记录取决于该信息
         systemInformation = new SystemInformationImpl(true);
 
-        log.trace("Initializing Logging");
+//        log.trace("Initializing Logging");
+        log.trace("初始化Logging");
         LoggingBootstrap.initLogging(systemInformation.getConfigFolder());
 
-        log.trace("Initializing Exception handlers");
+//        log.trace("Initializing Exception handlers");
+        log.trace("初始化 Exception handlers");
         HiveMQExceptionHandlerBootstrap.addUnrecoverableExceptionHandler();
 
-        log.trace("Initializing configuration");
+        log.trace("初始化 configuration");
         final FullConfigurationService configService = ConfigurationBootstrap.bootstrapConfig(systemInformation);
 
         final HivemqId hiveMQId = new HivemqId();
@@ -126,14 +132,16 @@ public class HiveMQServer {
 
         // 清除异常关闭时未清除的临时文件
         //ungraceful shutdown does not delete tmp folders, so we clean them up on broker start
-        log.trace("Cleaning up temporary folders");
+//        log.trace("Cleaning up temporary folders");
+        log.trace("清除异常关闭时未清除的临时文件");
         TemporaryFileUtils.deleteTmpFolder(systemInformation.getDataFolder());
 
         //must happen before persistence injector bootstrap as it creates the persistence folder.
         log.trace("Checking for migrations");
         final Map<MigrationUnit, PersistenceType> migrations = Migrations.checkForTypeMigration(systemInformation);
 
-        log.trace("Initializing persistences");
+//        log.trace("Initializing persistences");
+        log.trace("Guice 初始化 persistences 注入");
         final Injector persistenceInjector =
                 GuiceBootstrap.persistenceInjector(systemInformation, metricRegistry, hiveMQId, configService);
         //blocks until all persistences started
@@ -157,7 +165,7 @@ public class HiveMQServer {
             log.info("Starting with in memory persistences");
         }
 
-        log.trace("Initializing Guice");
+        log.trace("初始化 Guice 注入");
         final Injector injector = GuiceBootstrap.bootstrapInjector(systemInformation,
                 metricRegistry,
                 hiveMQId,

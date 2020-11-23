@@ -132,6 +132,7 @@ public abstract class AbstractHiveMQExtension implements HiveMQExtension {
     @NotNull
     public abstract Logger getLogger();
 
+    // 启动插件
     @Override
     public void start(
             final @NotNull ExtensionStartInput extensionStartInput, final @NotNull ExtensionStartOutput extensionStartOutput) {
