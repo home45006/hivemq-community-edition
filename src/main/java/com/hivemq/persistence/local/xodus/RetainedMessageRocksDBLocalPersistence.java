@@ -251,6 +251,9 @@ public class RetainedMessageRocksDBLocalPersistence extends RocksDBLocalPersiste
         return null;
     }
 
+    /***
+     * 持久化Retain消息
+     */
     @Override
     public void put(
             @NotNull final RetainedMessage retainedMessage, @NotNull final String topic, final int bucketIndex) {

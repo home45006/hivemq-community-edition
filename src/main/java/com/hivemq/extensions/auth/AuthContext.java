@@ -103,6 +103,7 @@ abstract class AuthContext<T extends AuthOutput<?>> extends PluginInOutTaskConte
         }
 
         try {
+            // 打包成任务，添加到工作线程异步执行
             ctx.executor().execute(() -> {
                 switch (state) {
                     case CONTINUE:

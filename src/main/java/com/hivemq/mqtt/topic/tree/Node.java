@@ -29,6 +29,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * @author Dominik Obermaier
  * @author Christoph Schäbel
+ * 已读
  */
 class Node {
 

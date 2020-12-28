@@ -56,6 +56,7 @@ public class TopicTreeImpl implements LocalTopicTree {
 
     final CopyOnWriteArrayList<SubscriberWithQoS> rootWildcardSubscribers = new CopyOnWriteArrayList<>();
 
+    // Guava Striped细粒度共享锁
     private final Striped<ReadWriteLock> segmentLocks;
 
     @VisibleForTesting

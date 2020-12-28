@@ -23,7 +23,7 @@
         </encoder>
     </appender>
 
-    <logger name="migrations" level="WARN" additivity="false">
+    <logger name="migrations" level="info" additivity="false">
         <appender-ref ref="CONSOLE"/>
     </logger>
 
@@ -31,7 +31,7 @@
         <appender-ref ref="CONSOLE"/>
     </root>
 
-    <root level="INFO">
+    <root level="trace">
         <appender-ref ref="CONSOLE"/>
     </root>
 

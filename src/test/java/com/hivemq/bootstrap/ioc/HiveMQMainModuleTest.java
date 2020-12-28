@@ -32,6 +32,9 @@ import static org.junit.Assert.assertNotSame;
  */
 public class HiveMQMainModuleTest {
 
+    /***
+     * 注入后每次获取新的实例
+     */
     @Test
     public void test_topic_matcher_not_same() {
 

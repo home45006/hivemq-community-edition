@@ -127,7 +127,7 @@ public class SystemInformationImpl implements SystemInformation {
             hivemqVersion = DEVELOPMENT_VERSION;
         }
 
-        log.info("HiveMQ version: {}", hivemqVersion);
+        log.info("HiveMQ 版本: {}", hivemqVersion);
     }
 
     public void setHivemqVersion(final String hivemqVersion) {
@@ -232,7 +232,7 @@ public class SystemInformationImpl implements SystemInformation {
 
         if (home != null) {
             homeFolder = findAbsoluteAndRelative(home);
-            log.info("HiveMQ home directory: {}", homeFolder.getAbsolutePath());
+            log.info("HiveMQ 家目录: {}", homeFolder.getAbsolutePath());
 
             //setting system property to support the deprecated PathUtils in the SPI
             System.setProperty(SystemProperties.HIVEMQ_HOME, homeFolder.getAbsolutePath());

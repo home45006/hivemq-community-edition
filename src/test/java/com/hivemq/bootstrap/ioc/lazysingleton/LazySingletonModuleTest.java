@@ -17,7 +17,9 @@ package com.hivemq.bootstrap.ioc.lazysingleton;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
+import com.google.inject.Injector;
 import com.google.inject.Stage;
+import com.hivemq.mqtt.topic.TopicMatcher;
 import org.junit.Test;
 
 import javax.inject.Singleton;
@@ -30,9 +32,12 @@ import static org.junit.Assert.assertEquals;
  */
 public class LazySingletonModuleTest {
 
+    /***
+     * 延迟加载注解(LazySingleton)测试
+     */
     @Test
     public void test_lazy_singleton_lazy_inition() throws Exception {
-        Guice.createInjector(Stage.PRODUCTION, new LazySingletonModule(),
+        Injector injector = Guice.createInjector(Stage.PRODUCTION, new LazySingletonModule(),
 
                 new AbstractModule() {
                     @Override
@@ -44,6 +49,9 @@ public class LazySingletonModuleTest {
 
         assertEquals(true, StandardSingleton.executed.get());
         assertEquals(false, LazySingletonClass.executed.get());
+
+        injector.getInstance(LazySingletonClass.class);
+        assertEquals(true, LazySingletonClass.executed.get());
     }
 
 

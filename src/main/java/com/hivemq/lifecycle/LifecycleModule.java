@@ -53,6 +53,7 @@ public class LifecycleModule extends SingletonModule<Class<LifecycleModule>> {
     private final AtomicReference<LifecycleRegistry> lifecycleRegistry = new AtomicReference<>();
 
     public static LifecycleModule get() {
+        // 以原子的方式 只有在当前值等于预期值的时候才会将值更新，返回是否更新成功
         instance.compareAndSet(null, new LifecycleModule());
         return instance.get();
     }

@@ -29,6 +29,8 @@ public interface PluginTaskPost<O extends PluginTaskOutput> {
      * This is assumed to be a non blocking very lightweight callback. It should basically just do a Thread switch into
      * the right ThreadPool and return. All computation should be done afterwards.
      *
+     * 假定这是一个非阻塞的非常轻量级的回调。它基本上应该只是将Thread切换到正确的ThreadPool中并返回。之后应进行所有计算。
+     *
      * @param pluginOutput the final result of a {@link PluginTask}, executed through the HiveMQ extension system.
      */
     void pluginPost(@NotNull final O pluginOutput);

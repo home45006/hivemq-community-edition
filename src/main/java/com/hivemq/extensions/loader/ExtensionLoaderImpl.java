@@ -354,7 +354,7 @@ public class ExtensionLoaderImpl implements ExtensionLoader {
             }
         }
 
-        final Optional<Class<? extends T>> classOptional = loadFromUrls(urls.build(), desiredClass, xmlEntity.getId());
+         final Optional<Class<? extends T>> classOptional = loadFromUrls(urls.build(), desiredClass, xmlEntity.getId());
 
         if (!classOptional.isPresent()) {
             try {

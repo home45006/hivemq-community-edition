@@ -25,6 +25,9 @@ import static org.junit.Assert.assertSame;
  */
 public class LazySingletonScopeTest {
 
+    /***
+     * LazySingletonScope为单例
+     */
     @Test
     public void test_lazy_singleton_scope_is_singleton() throws Exception {
         final Scope scope1 = LazySingletonScope.get();

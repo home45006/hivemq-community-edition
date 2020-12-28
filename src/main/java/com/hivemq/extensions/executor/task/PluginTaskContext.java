@@ -20,6 +20,8 @@ import com.hivemq.extension.sdk.api.annotations.NotNull;
 /**
  * The necessary context for the execution of a {@link PluginTask}.
  *
+ * 执行的必要上下文
+ *
  * @author Georg Held
  */
 public interface PluginTaskContext {

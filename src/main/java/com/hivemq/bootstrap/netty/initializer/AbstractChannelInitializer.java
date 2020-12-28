@@ -84,6 +84,7 @@ public abstract class AbstractChannelInitializer extends ChannelInitializer<Chan
         ch.pipeline().addLast(MQTT_SUBSCRIBE_MESSAGE_BARRIER, new SubscribeMessageBarrier());
 
         // before connack outbound interceptor as it initializes the client context after the connack
+        // 在connack出站拦截器之前，因为它在connack之后初始化了客户端上下文
         ch.pipeline().addLast(PLUGIN_INITIALIZER_HANDLER, channelDependencies.getPluginInitializerHandler());
 
         ch.pipeline().addLast(CONNECT_INBOUND_INTERCEPTOR_HANDLER, channelDependencies.getConnectInboundInterceptorHandler());

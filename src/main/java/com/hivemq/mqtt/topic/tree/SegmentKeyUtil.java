@@ -20,6 +20,7 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 /**
  * @author Lukas Brandl
+ * 已读
  */
 public class SegmentKeyUtil {
 

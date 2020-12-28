@@ -20,6 +20,8 @@ import com.hivemq.extension.sdk.api.annotations.NotNull;
 /**
  * Convenience class for creating the necessary runtime information for the handling of {@link PluginTask}s.
  *
+ * 便捷类，用于创建必要的运行时信息
+ *
  * @author Georg Held
  */
 public abstract class AbstractPluginTaskContext implements PluginTaskContext {

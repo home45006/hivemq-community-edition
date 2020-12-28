@@ -19,6 +19,9 @@ import com.hivemq.extension.sdk.api.annotations.NotNull;
 
 /**
  * @author Georg Held
+ *
+ * 插件任务上下文
+ *
  */
 public abstract class PluginInOutTaskContext<O extends PluginTaskOutput> extends AbstractPluginTaskContext
         implements PluginTaskPost<O> {
