@@ -21,6 +21,7 @@ import static org.junit.Assert.assertEquals;
 
 /**
  * @author Christoph Schäbel
+ * 已读
  */
 public class SubscriptionFlagsTest {
 

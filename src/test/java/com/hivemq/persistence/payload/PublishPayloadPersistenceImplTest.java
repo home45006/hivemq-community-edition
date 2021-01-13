@@ -52,7 +52,7 @@ public class PublishPayloadPersistenceImplTest {
     public void setUp() throws Exception {
         MockitoAnnotations.initMocks(this);
 
-        InternalConfigurations.PAYLOAD_CACHE_DURATION.set(1000L);
+        InternalConfigurations.PAYLOAD_CACHE_DURATION.set(10000L);
         InternalConfigurations.PAYLOAD_CACHE_SIZE.set(1000);
         InternalConfigurations.PAYLOAD_CACHE_CONCURRENCY_LEVEL.set(1);
         InternalConfigurations.PAYLOAD_PERSISTENCE_CLEANUP_SCHEDULE.set(10000);

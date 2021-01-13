@@ -271,7 +271,7 @@ public class IsolatedExtensionClassloaderTest {
 
         final File f = new File(clazz.getProtectionDomain().getCodeSource().getLocation().getPath());
         File gradleHivemqParentFolder = f.getParentFile();
-        while (!gradleHivemqParentFolder.getAbsolutePath().equals("/") && !gradleHivemqParentFolder.getAbsolutePath().endsWith("out")) {
+        while (!gradleHivemqParentFolder.getAbsolutePath().equals("D:\\git-github\\home45006\\hivemq-community-edition\\build") && !gradleHivemqParentFolder.getAbsolutePath().endsWith("out")) {
             gradleHivemqParentFolder = gradleHivemqParentFolder.getParentFile();
         }
         gradleHivemqParentFolder = gradleHivemqParentFolder.getParentFile();
