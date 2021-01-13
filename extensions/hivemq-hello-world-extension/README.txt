@@ -1,0 +1,62 @@
+:hivemq-link: https://www.hivemq.com
+:hivemq-extension-docs: {hivemq-link}/docs/extensions/latest/
+:hivemq-mqtt-toolbox: {hivemq-link}/mqtt-toolbox
+:hivemq-support: {hivemq-link}/support/
+:hivemq-testcontainer: https://github.com/hivemq/hivemq-testcontainer
+:hivemq-mqtt-client: https://github.com/hivemq/hivemq-mqtt-client
+
+= HiveMQ 4 Hello World Extension
+
+*Extension Type*: Demonstration
+
+*Version*: 4.5.0
+
+*License*: Apache License 2.0
+
+== Purpose
+
+This Hello World extension sets a ClientLifecycleEventListener which logs the MQTT Version and identifier of every connecting and disconnecting client and
+registers a PublishInboundInterceptor to modify the payload of every Publish with the topic 'hello/world' to 'Hello World!'.
+
+We strongly recommend to read the {hivemq-extension-docs}[HiveMQ Extension Documentation] to grasp the core concepts of HiveMQ extension development.
+
+== Installation
+
+. Clone this repository into a Java 11 Gradle project.
+. Execute the Gradle task `hivemqExtensionZip` to build the extension.
+. Move the file: `build/hivemq-extension/hivemq-hello-world-extension-4.5.0.zip` to the directory: `HIVEMQ_HOME/extensions`
+. Unzip the file.
+. Start HiveMQ.
+
+== First Steps
+
+=== Manual Testing
+
+Connect with an {hivemq-mqtt-toolbox}[MQTT client] of your choice. You should see a log message with its identifier and MQTT version.
+
+=== Automatic Testing
+
+Execute the `HelloWorldInterceptorIT` for automatic testing of the extension.
+It uses the {hivemq-testcontainer}[HiveMQ Testcontainer] to automatically package, deploy and run the extension inside a HiveMQ docker container.
+The test creates a {hivemq-mqtt-client}[HiveMQ MQTT Client] to publish and receive a message with the topic 'hello/world'.
+It checks whether the payload has been changed correctly to 'Hello World!'.
+
+== Next Steps
+
+Awesome, you got your first HiveMQ 4 extension working.
+
+Now read the {hivemq-extension-docs}[HiveMQ Extension Documentation] to see what extensions can do.
+
+== Need Help?
+
+If you encounter any problems, we are happy to help.
+The best place to get in contact is our {hivemq-support}[support^].
+
+== Contributing
+
+If you want to contribute to HiveMQ Hello World Extension, see the link:CONTRIBUTING.md[contribution guidelines].
+
+== License
+
+HiveMQ Hello World Extension is licensed under the `APACHE LICENSE, VERSION 2.0`.
+A copy of the license can be found link:LICENSE[here].
