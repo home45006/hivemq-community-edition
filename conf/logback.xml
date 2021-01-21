@@ -88,9 +88,10 @@
     </root>
 
     <logger name="jetbrains.exodus" level="WARN"/>
-    <logger name="io.netty" level="TRACE"/>
+<!--    <logger name="io.netty" level="TRACE"/>-->
     <logger name="org.eclipse.jetty" level="ERROR"/>
     <logger name="com.google.common.util.concurrent.Futures.CombinedFuture" level="OFF"/>
     <logger name="oshi" level="ERROR"/>
+
 
 </configuration>
