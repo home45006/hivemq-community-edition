@@ -1,0 +1,1348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9de7eb9-c921-4803-a41f-8f15dc175405" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hivemq/HiveMQServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hivemq/HiveMQServer.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hivemq-community-edition" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hivemq-community-edition" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hivemq-community-edition" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hivemq-community-edition" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hivemq-community-edition" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hivemq-community-edition" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="packaging" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="hivemq-community-edition" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="hivemq-community-edition" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1i5TO7LAzf9q4EvcH1VviqyPfzG" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hivemq-hello-world-extension" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.40725473" />
+    <property name="settings.editor.selected.configurable" value="ics" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git-github\home45006\hivemq-community-edition\conf" />
+      <recent name="D:\git-github\home45006\hivemq-community-edition\umls" />
+      <recent name="D:\git-github\home45006\hivemq-community-edition\extensions" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.HiveMQServer">
+    <list>
+      <item itemvalue="Application.HiveMQServer" />
+      <item itemvalue="JUnit.All Unit-Tests" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9de7eb9-c921-4803-a41f-8f15dc175405" name="Default Changelist" comment="" />
+      <created>1601196418345</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601196418345</updated>
+      <workItem from="1601196424041" duration="394000" />
+      <workItem from="1601196850245" duration="3451000" />
+      <workItem from="1601257714311" duration="11214000" />
+      <workItem from="1602208874622" duration="32021000" />
+      <workItem from="1602656599540" duration="3181000" />
+      <workItem from="1603419714866" duration="34632000" />
+      <workItem from="1603764368497" duration="32151000" />
+      <workItem from="1603965110967" duration="8910000" />
+      <workItem from="1604453236606" duration="30689000" />
+      <workItem from="1604993898949" duration="25948000" />
+      <workItem from="1605252339892" duration="231300000" />
+      <workItem from="1607322827804" duration="76849000" />
+      <workItem from="1607913944131" duration="670000" />
+      <workItem from="1607915713268" duration="595000" />
+      <workItem from="1607926430361" duration="966000" />
+      <workItem from="1607929524128" duration="6995000" />
+      <workItem from="1608000718198" duration="19070000" />
+      <workItem from="1608085510167" duration="50982000" />
+      <workItem from="1608514897473" duration="67480000" />
+      <workItem from="1609150143315" duration="55946000" />
+      <workItem from="1609724353257" duration="98140000" />
+      <workItem from="1610519415120" duration="58164000" />
+      <workItem from="1610950667391" duration="44813000" />
+      <workItem from="1611127791367" duration="234000" />
+      <workItem from="1611128055270" duration="13850000" />
+      <workItem from="1611197815736" duration="12706000" />
+    </task>
+    <task id="LOCAL-00001" summary="新增注释">
+      <created>1603451371283</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603451371283</updated>
+    </task>
+    <task id="LOCAL-00002" summary="新增注释">
+      <created>1603685933209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603685933209</updated>
+    </task>
+    <task id="LOCAL-00003" summary="新增注释">
+      <created>1606095736976</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606095736977</updated>
+    </task>
+    <task id="LOCAL-00004" summary="新增注释">
+      <created>1609124491471</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609124491471</updated>
+    </task>
+    <task id="LOCAL-00005" summary="单元测试阅读">
+      <created>1610532591691</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610532591691</updated>
+    </task>
+    <task id="LOCAL-00006" summary="新增hello-world插件">
+      <created>1610532661635</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610532661635</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增注释" />
+    <MESSAGE value="单元测试阅读" />
+    <MESSAGE value="新增hello-world插件" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增hello-world插件" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接" />
+          <line>204</line>
+          <option name="timeStamp" value="72" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/ClientLifecycleEventHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>233</line>
+          <option name="timeStamp" value="79" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接" />
+          <line>163</line>
+          <option name="timeStamp" value="82" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/ConnectInboundInterceptorHandler.java</url>
+          <option name="group" value="客户端连接" />
+          <line>120</line>
+          <option name="timeStamp" value="87" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/PluginAuthenticatorServiceImpl.java</url>
+          <option name="group" value="客户端连接" />
+          <line>165</line>
+          <option name="timeStamp" value="88" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/ClientLifecycleEventHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>242</line>
+          <option name="timeStamp" value="92" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/ClientLifecycleEventHandler.java</url>
+          <option name="group" value="客户端连接" />
+          <line>95</line>
+          <option name="timeStamp" value="93" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/ClientLifecycleEventHandler.java</url>
+          <option name="group" value="客户端连接" />
+          <line>266</line>
+          <option name="timeStamp" value="94" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>423</line>
+          <option name="timeStamp" value="95" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/auth/ConnectSimpleAuthOutput.java</url>
+          <option name="group" value="客户端连接" />
+          <line>42</line>
+          <option name="timeStamp" value="97" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/task/PluginTaskExecutor.java</url>
+          <option name="group" value="客户端连接" />
+          <line>238</line>
+          <option name="timeStamp" value="98" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/services/auth/WrappedAuthenticatorProvider.java</url>
+          <option name="group" value="插件加载" />
+          <line>51</line>
+          <option name="timeStamp" value="103" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/AbstractHiveMQExtension.java</url>
+          <option name="group" value="插件加载" />
+          <line>140</line>
+          <option name="timeStamp" value="110" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/services/auth/SecurityRegistryImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>64</line>
+          <option name="timeStamp" value="112" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLifecycleHandlerImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>58</line>
+          <option name="timeStamp" value="113" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/ExtensionBootstrapImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>93</line>
+          <option name="timeStamp" value="114" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/services/auth/AuthenticatorsImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>97</line>
+          <option name="timeStamp" value="116" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/HiveMQExtensions.java</url>
+          <option name="group" value="插件加载" />
+          <line>220</line>
+          <option name="timeStamp" value="119" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLoaderImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>271</line>
+          <option name="timeStamp" value="127" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLoaderImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>356</line>
+          <option name="timeStamp" value="128" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ClassServiceLoader.java</url>
+          <option name="group" value="插件加载" />
+          <line>91</line>
+          <option name="timeStamp" value="131" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLoaderImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>387</line>
+          <option name="timeStamp" value="134" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLoaderImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>194</line>
+          <option name="timeStamp" value="181" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/bootstrap/netty/initializer/AbstractChannelInitializer.java</url>
+          <option name="group" value="客户端连接" />
+          <line>67</line>
+          <option name="timeStamp" value="183" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/bootstrap/netty/initializer/ChannelGroupHandler.java</url>
+          <option name="group" value="客户端连接" />
+          <line>34</line>
+          <option name="timeStamp" value="184" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/ConnectInboundInterceptorHandler.java</url>
+          <option name="group" value="客户端连接" />
+          <line>104</line>
+          <option name="timeStamp" value="185" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/MessageBarrier.java</url>
+          <option name="group" value="客户端连接" />
+          <line>82</line>
+          <option name="timeStamp" value="187" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/NoConnectIdleHandler.java</url>
+          <option name="group" value="客户端连接" />
+          <line>62</line>
+          <option name="timeStamp" value="188" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/bootstrap/netty/initializer/TcpChannelInitializer.java</url>
+          <option name="group" value="客户端连接" />
+          <line>45</line>
+          <option name="timeStamp" value="191" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/ClientLifecycleEventHandler.java</url>
+          <option name="group" value="客户端连接" />
+          <line>100</line>
+          <option name="timeStamp" value="199" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/extensions/hivemq-allow-all-extension/hivemq-allow-all-extension-1.0.0.jar!/com/hivemq/extensions/allowall/AllowAllAuthenticator.class</url>
+          <option name="group" value="客户端连接" />
+          <line>17</line>
+          <option name="timeStamp" value="201" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/MessageBarrier.java</url>
+          <option name="group" value="客户端连接" />
+          <line>113</line>
+          <option name="timeStamp" value="205" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/PluginTaskExecutorServiceImpl.java</url>
+          <option name="group" value="客户端连接" />
+          <line>99</line>
+          <option name="timeStamp" value="216" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/HiveMQExtensions.java</url>
+          <option name="group" value="插件加载" />
+          <line>102</line>
+          <option name="timeStamp" value="221" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/ExtensionBootstrapImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>79</line>
+          <option name="timeStamp" value="222" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/HiveMQServer.java</url>
+          <option name="group" value="插件加载" />
+          <line>202</line>
+          <option name="timeStamp" value="228" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLoaderImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>277</line>
+          <option name="timeStamp" value="231" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/task/PluginTaskExecutor.java</url>
+          <option name="group" value="客户端连接" />
+          <line>331</line>
+          <option name="timeStamp" value="233" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/task/PluginTaskExecutor.java</url>
+          <option name="group" value="客户端连接" />
+          <line>301</line>
+          <option name="timeStamp" value="234" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/task/PluginTaskExecutor.java</url>
+          <option name="group" value="客户端连接" />
+          <line>250</line>
+          <option name="timeStamp" value="235" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/task/PluginTaskExecutor.java</url>
+          <option name="group" value="客户端连接" />
+          <line>163</line>
+          <option name="timeStamp" value="236" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/auth/AuthContext.java</url>
+          <option name="group" value="客户端连接" />
+          <line>88</line>
+          <option name="timeStamp" value="239" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/auth/AuthContext.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>112</line>
+          <option name="timeStamp" value="240" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/auth/ConnectAuthContext.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>68</line>
+          <option name="timeStamp" value="241" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>237</line>
+          <option name="timeStamp" value="242" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>409</line>
+          <option name="timeStamp" value="243" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/auth/AbstractAuthTask.java</url>
+          <option name="group" value="客户端连接" />
+          <line>54</line>
+          <option name="timeStamp" value="246" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/task/PluginTaskExecutor.java</url>
+          <option name="group" value="客户端连接" />
+          <line>287</line>
+          <option name="timeStamp" value="247" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/auth/AuthContext.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>106</line>
+          <option name="timeStamp" value="248" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/ClientLifecycleEventHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>111</line>
+          <option name="timeStamp" value="249" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/PluginAuthenticatorServiceImpl.java</url>
+          <option name="group" value="客户端连接" />
+          <line>155</line>
+          <option name="timeStamp" value="251" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/task/PluginTaskExecutor.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>165</line>
+          <option name="timeStamp" value="258" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>242</line>
+          <option name="timeStamp" value="261" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/services/auth/AuthenticatorsImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>81</line>
+          <option name="timeStamp" value="263" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLoaderImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>104</line>
+          <option name="timeStamp" value="264" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLifecycleHandlerImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>91</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="265" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLifecycleHandlerImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>73</line>
+          <option name="timeStamp" value="267" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/HiveMQExtensions.java</url>
+          <option name="group" value="插件加载" />
+          <line>243</line>
+          <option name="timeStamp" value="270" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLifecycleHandlerImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>66</line>
+          <option name="timeStamp" value="271" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLifecycleHandlerImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>69</line>
+          <option name="timeStamp" value="272" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>559</line>
+          <option name="timeStamp" value="274" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>544</line>
+          <option name="timeStamp" value="276" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>309</line>
+          <option name="timeStamp" value="277" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>296</line>
+          <option name="timeStamp" value="278" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/ordering/OrderedTopicHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>131</line>
+          <option name="timeStamp" value="279" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/handler/ClientLifecycleEventHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>138</line>
+          <option name="timeStamp" value="280" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>575</line>
+          <option name="timeStamp" value="281" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/PollInflightMessageListener.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>39</line>
+          <option name="timeStamp" value="282" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/task/PluginTaskExecutor.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>240</line>
+          <option name="timeStamp" value="283" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>425</line>
+          <option name="timeStamp" value="284" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>430</line>
+          <option name="timeStamp" value="285" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>652</line>
+          <option name="timeStamp" value="290" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>522</line>
+          <option name="timeStamp" value="294" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>427</line>
+          <option name="timeStamp" value="297" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接" />
+          <line>190</line>
+          <option name="timeStamp" value="298" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>548</line>
+          <option name="timeStamp" value="300" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>739</line>
+          <option name="timeStamp" value="304" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/bootstrap/netty/initializer/AbstractChannelInitializer.java</url>
+          <option name="group" value="客户端连接" />
+          <line>150</line>
+          <option name="timeStamp" value="305" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/hivemq/mqtt/topic/tree/NodeUtilsTest.java</url>
+          <option name="group" value="订阅树-数据结构单元测试" />
+          <line>93</line>
+          <option name="timeStamp" value="363" />
+          <group>订阅树-数据结构单元测试</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLoaderImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>113</line>
+          <option name="timeStamp" value="429" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLifecycleHandlerImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>79</line>
+          <option name="timeStamp" value="430" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/local/xodus/clientsession/ClientSessionXodusLocalPersistence.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>272</line>
+          <option name="timeStamp" value="436" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/HiveMQServer.java</url>
+          <option name="group" value="插件加载" />
+          <line>181</line>
+          <option name="timeStamp" value="482" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/HiveMQServer.java</url>
+          <option name="group" value="插件加载" />
+          <line>148</line>
+          <option name="timeStamp" value="485" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLoaderImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>159</line>
+          <option name="timeStamp" value="518" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/extensions/hivemq-hello-world-extension/hivemq-hello-world-extension-4.5.0.jar!/com/hivemq/extensions/HelloWorldMain.class</url>
+          <option name="group" value="客户端连接" />
+          <line>29</line>
+          <option name="timeStamp" value="519" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/HiveMQServer.java</url>
+          <option name="group" value="插件加载" />
+          <line>87</line>
+          <option name="timeStamp" value="522" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/extensions/hivemq-hello-world-extension/hivemq-hello-world-extension-4.5.0.jar!/com/hivemq/extensions/HelloWorldMain.class</url>
+          <option name="group" value="客户端连接" />
+          <line>51</line>
+          <option name="timeStamp" value="523" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$PROJECT_DIR$/extensions/hivemq-allow-all-extension/hivemq-allow-all-extension-1.0.0.jar!/com/hivemq/extensions/allowall/AllowAllMain.class</url>
+          <option name="group" value="插件加载" />
+          <line>29</line>
+          <option name="timeStamp" value="524" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/ioc/ExtensionModule.java</url>
+          <option name="group" value="插件任务执行线程组" />
+          <line>93</line>
+          <option name="timeStamp" value="526" />
+          <group>插件任务执行线程组</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/PluginTaskExecutorServiceImpl.java</url>
+          <option name="group" value="插件任务执行线程组" />
+          <line>54</line>
+          <option name="timeStamp" value="527" />
+          <group>插件任务执行线程组</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/MessageBarrier.java</url>
+          <option name="group" value="客户端连接" />
+          <line>69</line>
+          <option name="timeStamp" value="538" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/services/PublishPollServiceImpl.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>216</line>
+          <option name="timeStamp" value="539" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/executor/task/PluginTaskExecutor.java</url>
+          <option name="group" value="客户端连接" />
+          <line>101</line>
+          <option name="timeStamp" value="542" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/auth/ConnectSimpleAuthTask.java</url>
+          <option name="group" value="客户端连接" />
+          <line>43</line>
+          <option name="timeStamp" value="550" />
+          <group>客户端连接</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>656</line>
+          <option name="timeStamp" value="552" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>238</line>
+          <option name="timeStamp" value="553" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>542</line>
+          <option name="timeStamp" value="554" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/clientsession/ClientSessionPersistenceImpl.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>172</line>
+          <option name="timeStamp" value="557" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectPersistenceUpdateHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>77</line>
+          <option name="timeStamp" value="562" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/clientsession/ClientSessionPersistenceImpl.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>183</line>
+          <option name="timeStamp" value="563" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ProducerQueues.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>125</line>
+          <option name="timeStamp" value="567" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/SingleWriterService.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>113</line>
+          <option name="timeStamp" value="584" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/CleanUpService.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>103</line>
+          <option name="timeStamp" value="597" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/CleanUpService.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>127</line>
+          <option name="timeStamp" value="602" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/CleanUpService.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>129</line>
+          <option name="timeStamp" value="603" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/CleanUpService.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>131</line>
+          <option name="timeStamp" value="604" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/CleanUpService.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>133</line>
+          <option name="timeStamp" value="605" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/CleanUpService.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>135</line>
+          <option name="timeStamp" value="606" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ProducerQueues.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>187</line>
+          <option name="timeStamp" value="610" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/SingleWriterService.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>317</line>
+          <option name="timeStamp" value="613" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ProducerQueues.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>201</line>
+          <option name="timeStamp" value="615" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/retained/RetainedMessagePersistenceImpl.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>67</line>
+          <option name="timeStamp" value="617" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/LocalPersistenceModule.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>80</line>
+          <option name="timeStamp" value="618" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/PersistenceModule.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>60</line>
+          <option name="timeStamp" value="620" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ProducerQueues.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>189</line>
+          <option name="timeStamp" value="621" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/PersistenceModule.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>86</line>
+          <option name="timeStamp" value="622" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/CleanUpService.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>114</line>
+          <option name="timeStamp" value="623" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/CleanUpService.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>157</line>
+          <option name="timeStamp" value="624" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/clientsession/ClientSessionPersistenceImpl.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>371</line>
+          <option name="timeStamp" value="625" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/clientsession/task/ClientSessionCleanUpTask.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>44</line>
+          <option name="timeStamp" value="626" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/clientsession/ClientSessionPersistenceImpl.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>173</line>
+          <option name="timeStamp" value="627" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/clientsession/ClientSessionPersistenceImpl.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>210</line>
+          <option name="timeStamp" value="628" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/handler/connect/ConnectPersistenceUpdateHandler.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>228</line>
+          <option name="timeStamp" value="629" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/services/PublishPollServiceImpl.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>116</line>
+          <option name="timeStamp" value="630" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/services/PublishPollServiceImpl.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>186</line>
+          <option name="timeStamp" value="631" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/mqtt/services/PublishPollServiceImpl.java</url>
+          <option name="group" value="客户端连接-鉴权处理" />
+          <line>221</line>
+          <option name="timeStamp" value="632" />
+          <group>客户端连接-鉴权处理</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/extensions/loader/ExtensionLoaderImpl.java</url>
+          <option name="group" value="插件加载" />
+          <line>234</line>
+          <option name="timeStamp" value="634" />
+          <group>插件加载</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/HiveMQServer.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>84</line>
+          <option name="timeStamp" value="635" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/local/xodus/clientsession/ClientSessionXodusLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>131</line>
+          <option name="timeStamp" value="637" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/bootstrap/ioc/GuiceBootstrap.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>139</line>
+          <option name="timeStamp" value="638" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/PersistenceMigrationModule.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>61</line>
+          <option name="timeStamp" value="639" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/PersistenceMigrationFileModule.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>62</line>
+          <option name="timeStamp" value="640" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/PersistenceMigrationRocksDBModule.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>46</line>
+          <option name="timeStamp" value="641" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/PersistenceMigrationRocksDBModule.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>51</line>
+          <option name="timeStamp" value="642" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/PersistenceMigrationFileModule.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>65</line>
+          <option name="timeStamp" value="647" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/local/xodus/clientsession/ClientSessionXodusLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>147</line>
+          <option name="timeStamp" value="650" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/PersistenceStartup.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>63</line>
+          <option name="timeStamp" value="651" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/bootstrap/ioc/GuiceBootstrap.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>117</line>
+          <option name="timeStamp" value="655" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/payload/PublishPayloadRocksDBLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>86</line>
+          <option name="timeStamp" value="659" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/local/rocksdb/RocksDBLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>93</line>
+          <option name="timeStamp" value="660" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/local/rocksdb/RocksDBLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>154</line>
+          <option name="timeStamp" value="662" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/local/xodus/RetainedMessageRocksDBLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>116</line>
+          <option name="timeStamp" value="663" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/local/xodus/XodusLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>97</line>
+          <option name="timeStamp" value="666" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/local/xodus/XodusLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>146</line>
+          <option name="timeStamp" value="667" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/local/xodus/XodusLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>161</line>
+          <option name="timeStamp" value="669" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/PersistenceMigrationModule.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>66</line>
+          <option name="timeStamp" value="670" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/PersistenceMigrationFileModule.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>66</line>
+          <option name="timeStamp" value="671" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/PersistenceMigrationFileModule.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>67</line>
+          <option name="timeStamp" value="672" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/local/xodus/clientsession/ClientSessionSubscriptionXodusLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>106</line>
+          <option name="timeStamp" value="673" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/clientqueue/ClientQueueXodusLocalPersistence.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>166</line>
+          <option name="timeStamp" value="674" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/provider/local/ClientSessionLocalProvider.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>46</line>
+          <option name="timeStamp" value="675" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/provider/local/ClientSessionSubscriptionLocalProvider.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>45</line>
+          <option name="timeStamp" value="676" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/payload/PublishPayloadPersistenceImpl.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>95</line>
+          <option name="timeStamp" value="677" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/payload/PublishPayloadPersistenceImpl.java</url>
+          <option name="group" value="数据持久化启动-2" />
+          <line>75</line>
+          <option name="timeStamp" value="678" />
+          <group>数据持久化启动-2</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/ioc/LocalPersistenceModule.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>74</line>
+          <option name="timeStamp" value="679" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/hivemq/persistence/retained/RetainedMessagePersistenceProvider.java</url>
+          <option name="group" value="数据持久化启动" />
+          <line>37</line>
+          <option name="timeStamp" value="680" />
+          <group>数据持久化启动</group>
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Remote">
+        <watch expression="gradleHivemqParentFolder.getParentFile()" language="JAVA" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="taskExecutor" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

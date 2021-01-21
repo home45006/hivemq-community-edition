@@ -81,6 +81,7 @@ public class HiveMQServer {
 
     public void start(final @Nullable EmbeddedExtension embeddedExtension) throws Exception {
 
+        // 缓存初始化
         payloadPersistence.init();
 
         // 插件加载
