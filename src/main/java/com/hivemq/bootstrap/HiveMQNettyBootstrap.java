@@ -35,6 +35,8 @@ import com.hivemq.util.Validators;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.buffer.PooledByteBufAllocator;
 import io.netty.channel.*;
+import io.netty.handler.logging.LogLevel;
+import io.netty.handler.logging.LoggingHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -220,6 +222,7 @@ public class HiveMQNettyBootstrap {
         final ServerBootstrap b = new ServerBootstrap();
         b.group(bossGroup, workerGroup)
                 .channel(nettyConfiguration.getServerSocketChannelClass())
+                .handler(new LoggingHandler(LogLevel.DEBUG))
                 .childHandler(channelInitializerFactory.getChannelInitializer(listener))
                 .option(ChannelOption.SO_BACKLOG, 128)
                 .option(ChannelOption.ALLOCATOR, PooledByteBufAllocator.DEFAULT)
