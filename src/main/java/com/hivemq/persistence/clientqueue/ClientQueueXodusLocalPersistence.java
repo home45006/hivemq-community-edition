@@ -282,6 +282,7 @@ public class ClientQueueXodusLocalPersistence extends XodusLocalPersistence impl
             }
         } else {
             queueSize.incrementAndGet();
+            log.info("queueSizeBuckets-increment: {}, {}", bucketIndex,  queueSize.get());
             if (retained) {
                 retainedQueueSize.incrementAndGet();
             }
@@ -415,6 +416,7 @@ public class ClientQueueXodusLocalPersistence extends XodusLocalPersistence impl
 
         getOrPutQos0Messages(key, bucketIndex).add(publishWithRetained);
         getOrPutQueueSize(key, bucketIndex).incrementAndGet();
+        log.info("--------------QueueSize: {}, {}", bucketIndex, getOrPutQueueSize(key, bucketIndex));
         if (publishWithRetained.retained) {
             getOrPutRetainedQueueSize(key, bucketIndex).incrementAndGet();
         }
@@ -576,6 +578,7 @@ public class ClientQueueXodusLocalPersistence extends XodusLocalPersistence impl
                         cursor.deleteCurrent();
                         payloadPersistence.decrementReferenceCounter(publish.getPayloadId());
                         getOrPutQueueSize(key, bucketIndex).decrementAndGet();
+                        log.info("readNew-decrement: {}, {}", bucketIndex, getOrPutQueueSize(key, bucketIndex));
                         if (serializer.deserializeRetained(serializedValue)) {
                             getOrPutRetainedQueueSize(key, bucketIndex).decrementAndGet();
                         }
@@ -621,6 +624,7 @@ public class ClientQueueXodusLocalPersistence extends XodusLocalPersistence impl
         final PUBLISH qos0Publish = publishWithRetained.publish;
         qos0Messages.remove(0);
         getOrPutQueueSize(key, bucketIndex).decrementAndGet();
+        log.info("--------------QueueSize: {}, {}", bucketIndex, getOrPutQueueSize(key, bucketIndex));
         if (publishWithRetained.retained) {
             getOrPutRetainedQueueSize(key, bucketIndex).decrementAndGet();
         }
@@ -765,6 +769,7 @@ public class ClientQueueXodusLocalPersistence extends XodusLocalPersistence impl
                             removedId = publish.getUniqueId();
                         }
                         getOrPutQueueSize(key, bucketIndex).decrementAndGet();
+                        log.info("remove-decrement: {}, {}", bucketIndex, getOrPutQueueSize(key, bucketIndex));
                         if (serializer.deserializeRetained(cursor.getValue())) {
                             getOrPutRetainedQueueSize(key, bucketIndex).decrementAndGet();
                         }
@@ -834,6 +839,7 @@ public class ClientQueueXodusLocalPersistence extends XodusLocalPersistence impl
             payloadPersistence.decrementReferenceCounter(qos0Message.publish.getPayloadId());
         }
         qos0MessageBuckets.get(bucketIndex).remove(key);
+        log.info("queueSizeBuckets-remove: {}, {}", bucketIndex, getOrPutQueueSize(key, bucketIndex));
         queueSizeBuckets.get(bucketIndex).remove(key);
         retainedQueueSizeBuckets.get(bucketIndex).remove(key);
     }
@@ -855,6 +861,7 @@ public class ClientQueueXodusLocalPersistence extends XodusLocalPersistence impl
             iterator.remove();
             payloadPersistence.decrementReferenceCounter(publish.getPayloadId());
             getOrPutQueueSize(key, bucketIndex).decrementAndGet();
+            log.info("removeAllQos0Message-decrement: {}, {}", bucketIndex, getOrPutQueueSize(key, bucketIndex));
             if (publishWithRetained.retained) {
                 getOrPutRetainedQueueSize(key, bucketIndex).decrementAndGet();
             }
@@ -914,6 +921,7 @@ public class ClientQueueXodusLocalPersistence extends XodusLocalPersistence impl
                         }
                         payloadPersistence.decrementReferenceCounter(publish.getPayloadId());
                         getOrPutQueueSize(key, bucketIndex).decrementAndGet();
+                        log.info("removeShared-decrement: {}, {}", bucketIndex, getOrPutQueueSize(key, bucketIndex));
                         if (serializer.deserializeRetained(cursor.getValue())) {
                             getOrPutRetainedQueueSize(key, bucketIndex).decrementAndGet();
                         }
@@ -974,6 +982,7 @@ public class ClientQueueXodusLocalPersistence extends XodusLocalPersistence impl
             final PUBLISH qos0Message = publishWithRetained.publish;
             if (PublishUtil.checkExpiry(qos0Message.getTimestamp(), qos0Message.getMessageExpiryInterval())) {
                 getOrPutQueueSize(key, bucketIndex).decrementAndGet();
+                log.info("cleanExpireMessage-decrement: {}, {}", bucketIndex, getOrPutQueueSize(key, bucketIndex));
                 increaseQos0MessagesMemory(qos0Message.getEstimatedSizeInMemory() * -1);
                 increaseClientQos0MessagesMemory(key, qos0Message.getEstimatedSizeInMemory() * -1);
                 payloadPersistence.decrementReferenceCounter(qos0Message.getPayloadId());
@@ -1017,6 +1026,7 @@ public class ClientQueueXodusLocalPersistence extends XodusLocalPersistence impl
                         if (drop) {
                             payloadPersistence.decrementReferenceCounter(publish.getPayloadId());
                             getOrPutQueueSize(key, bucketIndex).decrementAndGet();
+                            log.info("cleanExpiredMessages-decrement: {}, {}", bucketIndex, getOrPutQueueSize(key, bucketIndex));
                             if (serializer.deserializeRetained(serializedValue)) {
                                 getOrPutRetainedQueueSize(key, bucketIndex).decrementAndGet();
                             }

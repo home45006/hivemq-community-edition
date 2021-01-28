@@ -52,6 +52,8 @@ public class PublishWritePromiseListener implements GenericFutureListener<Future
                 Exceptions.rethrowError("Failed to write publish.", cause);
                 statusFuture.set(PublishStatus.FAILED);
             }
+        } else {
+            log.info("发送成功");
         }
     }
 }

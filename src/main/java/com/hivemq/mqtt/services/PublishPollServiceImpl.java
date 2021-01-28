@@ -185,8 +185,12 @@ public class PublishPollServiceImpl implements PublishPollService {
                 }
 
                 final AtomicInteger inFlightMessages = inFlightMessageCount(channel);
+                if(publishes.size() == 0) {
+                    log.info("publishes为空");
+                }
                 for (final PUBLISH publish : publishes) {
                     inFlightMessages.incrementAndGet();
+                    log.info("===============inFlightMessages-increment: {}", inFlightMessages.get());
                     try {
                         sendOutPublish(publish, false, channel, client, messageIDPool, client);
                     } catch (final PayloadPersistenceException e) {
@@ -196,6 +200,7 @@ public class PublishPollServiceImpl implements PublishPollService {
                             removeMessageFromQueue(client, publish.getPacketIdentifier());
                         }
                         inFlightMessages.decrementAndGet();
+                        log.info("inFlightMessages-decrement: {}", inFlightMessages.get());
                         messageDroppedService.failed(client, publish.getTopic(), publish.getQoS().getQosNumber());
                     }
                 }
@@ -400,6 +405,7 @@ public class PublishPollServiceImpl implements PublishPollService {
         // In this case we just call the callback directly, which will result in the same handling as if the client disconnected while the callback was already added
         if (!channel.isActive()) {
             channelInactiveCallback.channelInactive();
+            log.error("发送失败, 客户端连接已断开");
             return;
         }
 

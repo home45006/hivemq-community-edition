@@ -96,6 +96,11 @@ public class ChannelUtils {
         if (inFlightMessages == null) {
             return false;
         }
+        if(inFlightMessages.get() > 0) {
+            log.info("有消息正在发送: {}", inFlightMessages.get());
+        } else {
+            log.info("无消息正在发送: {}", inFlightMessages.get());
+        }
         return inFlightMessages.get() > 0;
     }
 

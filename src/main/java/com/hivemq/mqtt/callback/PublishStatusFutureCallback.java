@@ -115,8 +115,10 @@ public class PublishStatusFutureCallback implements FutureCallback<PublishStatus
     private void checkForNewMessages() {
         final AtomicInteger inFlightMessages = channel.attr(ChannelAttributes.IN_FLIGHT_MESSAGES).get();
         if (inFlightMessages != null && inFlightMessages.decrementAndGet() > 0) {
+            log.info("inFlightMessages-checkForNewMessages-decrement: {}", inFlightMessages.get());
             return;
         }
+        log.info("===============inFlightMessages-decrement: {}", inFlightMessages.get());
         publishPollService.pollMessages(client, channel);
     }
 

@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package com.hivemq.persistence.clientqueue;
 
 import com.google.common.collect.ImmutableList;
@@ -40,6 +41,8 @@ import com.hivemq.persistence.local.ClientSessionLocalPersistence;
 import com.hivemq.persistence.payload.PayloadPersistenceException;
 import com.hivemq.util.ChannelUtils;
 import io.netty.channel.Channel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import java.util.ArrayList;
@@ -54,6 +57,8 @@ import static com.hivemq.persistence.clientsession.SharedSubscriptionServiceImpl
  */
 @LazySingleton
 public class ClientQueuePersistenceImpl extends AbstractPersistence implements ClientQueuePersistence {
+
+    private final Logger log = LoggerFactory.getLogger(ClientQueuePersistenceImpl.class);
 
     public static final int SHARED_IN_FLIGHT_MARKER = 1;
 
@@ -100,8 +105,11 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
     @Override
     @NotNull
     public ListenableFuture<Void> add(
-            @NotNull final String queueId, final boolean shared, @NotNull final PUBLISH publish,
-            final boolean retained, final long queueLimit) {
+            @NotNull final String queueId,
+            final boolean shared,
+            @NotNull final PUBLISH publish,
+            final boolean retained,
+            final long queueLimit) {
         try {
             checkNotNull(queueId, "Queue ID must not be null");
             checkNotNull(publish, "Publish must not be null");
@@ -110,8 +118,13 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
         }
 
         return singleWriter.submit(queueId, (bucketIndex, queueBuckets, queueIndex) -> {
-            localPersistence.add(queueId, shared, publish, queueLimit, mqttConfigurationService.getQueuedMessagesStrategy(),
-                    retained, bucketIndex);
+            localPersistence.add(queueId,
+                    shared,
+                    publish,
+                    queueLimit,
+                    mqttConfigurationService.getQueuedMessagesStrategy(),
+                    retained,
+                    bucketIndex);
             final int queueSize = localPersistence.size(queueId, shared, bucketIndex);
             if (queueSize == 1) {
                 if (shared) {
@@ -119,6 +132,8 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
                 } else {
                     publishAvailable(queueId);
                 }
+            } else {
+                log.error("发生错误: ------------queueSize: {}", queueSize);
             }
             return null;
         });
@@ -127,8 +142,11 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
     @Override
     @NotNull
     public ListenableFuture<Void> add(
-            @NotNull final String queueId, final boolean shared, @NotNull final List<PUBLISH> publishes,
-            final boolean retained, final long queueLimit) {
+            @NotNull final String queueId,
+            final boolean shared,
+            @NotNull final List<PUBLISH> publishes,
+            final boolean retained,
+            final long queueLimit) {
         try {
             checkNotNull(queueId, "Queue ID must not be null");
             checkNotNull(publishes, "Publishes must not be null");
@@ -138,8 +156,13 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
 
         return singleWriter.submit(queueId, (bucketIndex, queueBuckets, queueIndex) -> {
             final boolean queueWasEmpty = localPersistence.size(queueId, shared, bucketIndex) == 0;
-            localPersistence.add(queueId, shared, publishes, queueLimit, mqttConfigurationService.getQueuedMessagesStrategy(),
-                    retained, bucketIndex);
+            localPersistence.add(queueId,
+                    shared,
+                    publishes,
+                    queueLimit,
+                    mqttConfigurationService.getQueuedMessagesStrategy(),
+                    retained,
+                    bucketIndex);
             if (queueWasEmpty) {
                 if (shared) {
                     sharedPublishAvailable(queueId);
@@ -158,17 +181,21 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
     public void publishAvailable(@NotNull final String client) {
         final ClientSession session = clientSessionLocalPersistence.getSession(client);
         if (session == null || !session.isConnected()) {
+            log.error("会话为空");
             return;
         }
 
         final Channel channel = channelPersistence.get(client);
         if (channel == null || !channel.isActive()) {
+            log.error("channel关闭");
             return;
         }
 
         if (ChannelUtils.messagesInFlight(channel)) {
+            log.error("消息正在发送");
             return;
         }
+        log.info("执行发送任务");
         channel.eventLoop().submit(() -> publishPollService.pollNewMessages(client, channel));
 
     }
@@ -187,7 +214,9 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
     @Override
     @NotNull
     public ListenableFuture<ImmutableList<PUBLISH>> readNew(
-            @NotNull final String queueId, final boolean shared, @NotNull final ImmutableIntArray packetIds,
+            @NotNull final String queueId,
+            final boolean shared,
+            @NotNull final ImmutableIntArray packetIds,
             final long byteLimit) {
         try {
             checkNotNull(queueId, "Queue ID must not be null");
@@ -196,15 +225,17 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
             return Futures.immediateFailedFuture(exception);
         }
         return singleWriter.submit(
-                queueId, (bucketIndex, queueBuckets, queueIndex) -> checkPayloadReference(
-                        localPersistence.readNew(queueId, shared, packetIds, byteLimit, bucketIndex), queueId, shared));
+                queueId,
+                (bucketIndex, queueBuckets, queueIndex) -> checkPayloadReference(localPersistence.readNew(queueId,
+                        shared,
+                        packetIds,
+                        byteLimit,
+                        bucketIndex), queueId, shared));
     }
 
     @NotNull
     private <T extends MessageWithID> ImmutableList<T> checkPayloadReference(
-            @NotNull final ImmutableList<T> publishes,
-            @NotNull final String queueId,
-            final boolean shared) {
+            @NotNull final ImmutableList<T> publishes, @NotNull final String queueId, final boolean shared) {
         List<T> reducedList = null;
         for (final T message : publishes) {
             if (message instanceof PUBLISH) {
@@ -242,8 +273,7 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
         // We reuse the non shared read new logic but without providing real message ID's.
         final ImmutableIntArray.Builder builder = ImmutableIntArray.builder(messageLimit);
         for (int i = 0; i < messageLimit; i++) {
-            builder.add(
-                    SHARED_IN_FLIGHT_MARKER); // We don't need a real message id here, messages are just marked as in-flight
+            builder.add(SHARED_IN_FLIGHT_MARKER); // We don't need a real message id here, messages are just marked as in-flight
         }
         return readNew(sharedSubscription, true, builder.build(), byteLimit);
     }
@@ -322,10 +352,9 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
             for (final String sharedQueue : sharedQueues) {
                 final SharedSubscription sharedSubscription =
                         SharedSubscriptionServiceImpl.splitTopicAndGroup(sharedQueue);
-                final ImmutableSet<SubscriberWithQoS> sharedSubscriber =
-                        topicTree.getSharedSubscriber(
-                                sharedSubscription.getShareName(),
-                                sharedSubscription.getTopicFilter());
+                final ImmutableSet<SubscriberWithQoS> sharedSubscriber = topicTree.getSharedSubscriber(
+                        sharedSubscription.getShareName(),
+                        sharedSubscription.getTopicFilter());
                 if (sharedSubscriber.isEmpty()) {
                     localPersistence.clear(sharedQueue, true, bucketIndex);
                 }
@@ -340,8 +369,7 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
     @Override
     @NotNull
     public ListenableFuture<Integer> size(@NotNull final String queueId, final boolean shared) {
-        return singleWriter.submit(
-                queueId,
+        return singleWriter.submit(queueId,
                 (bucketIndex, queueBuckets, queueIndex) -> localPersistence.size(queueId, shared, bucketIndex));
     }
 
@@ -415,8 +443,7 @@ public class ClientQueuePersistenceImpl extends AbstractPersistence implements C
                 return false;
             }
             final Key key = (Key) o;
-            return shared == key.shared &&
-                    Objects.equals(queueId, key.queueId);
+            return shared == key.shared && Objects.equals(queueId, key.queueId);
         }
 
         @Override
