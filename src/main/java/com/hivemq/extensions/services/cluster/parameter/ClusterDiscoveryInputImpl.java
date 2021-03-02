@@ -13,14 +13,22 @@ import com.hivemq.extensions.executor.task.PluginTaskInput;
  **/
 public class ClusterDiscoveryInputImpl implements ClusterDiscoveryInput, PluginTaskInput {
 
+    private ClusterNodeAddress ownAddress;
+    private String clusterId;
+
+    public ClusterDiscoveryInputImpl() {
+        ownAddress = new ClusterNodeAddress("127.0.0.1", 8000);
+        clusterId = "cluster-test";
+    }
+
     @Override
     public @NotNull ClusterNodeAddress getOwnAddress() {
-        return null;
+        return ownAddress;
     }
 
     @Override
     public @NotNull String getOwnClusterId() {
-        return null;
+        return clusterId;
     }
 
     @Override

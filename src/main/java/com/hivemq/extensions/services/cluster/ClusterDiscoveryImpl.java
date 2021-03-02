@@ -3,7 +3,9 @@ package com.hivemq.extensions.services.cluster;
 import com.hivemq.extension.sdk.api.annotations.Immutable;
 import com.hivemq.extension.sdk.api.annotations.NotNull;
 import com.hivemq.extension.sdk.api.services.cluster.ClusterDiscoveryCallback;
+import com.hivemq.extensions.HiveMQExtensions;
 
+import javax.inject.Inject;
 import javax.inject.Singleton;
 
 /**
@@ -16,6 +18,14 @@ import javax.inject.Singleton;
 public class ClusterDiscoveryImpl implements ClusterDiscovery {
 
     private ClusterDiscoveryCallback clusterDiscoveryCallback;
+
+    @NotNull
+    private final HiveMQExtensions hiveMQExtensions;
+
+    @Inject
+    public ClusterDiscoveryImpl(HiveMQExtensions hiveMQExtensions) {
+        this.hiveMQExtensions = hiveMQExtensions;
+    }
 
     @Override
     public @Immutable @NotNull ClusterDiscoveryCallback getClusterDiscoveryCallback() {
