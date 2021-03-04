@@ -49,7 +49,7 @@ import com.hivemq.extensions.loader.*;
 import com.hivemq.extensions.services.admin.AdminServiceImpl;
 import com.hivemq.extensions.services.auth.*;
 import com.hivemq.extensions.services.builder.*;
-import com.hivemq.extensions.services.cluster.ClusterServiceNoopImpl;
+import com.hivemq.extensions.services.cluster.*;
 import com.hivemq.extensions.services.initializer.InitializerRegistryImpl;
 import com.hivemq.extensions.services.initializer.Initializers;
 import com.hivemq.extensions.services.initializer.InitializersImpl;
@@ -85,6 +85,9 @@ public class ExtensionModule extends SingletonModule<Class<ExtensionModule>> {
         bind(ExtensionLifecycleHandler.class).to(ExtensionLifecycleHandlerImpl.class);
         bind(Authenticators.class).to(AuthenticatorsImpl.class);
         bind(Authorizers.class).to(AuthorizersImpl.class);
+
+        // 集群自动发现注入
+        bind(ClusterDiscovery.class).to(ClusterDiscoveryImpl.class);
         bind(SecurityRegistry.class).to(SecurityRegistryImpl.class);
 
         bind(ExecutorService.class).annotatedWith(PluginStartStop.class)
@@ -126,5 +129,8 @@ public class ExtensionModule extends SingletonModule<Class<ExtensionModule>> {
         bind(GlobalInterceptorRegistry.class).to(GlobalInterceptorRegistryImpl.class).in(LazySingleton.class);
         bind(Interceptors.class).to(InterceptorsImpl.class).in(LazySingleton.class);
         bind(AdminService.class).to(AdminServiceImpl.class).in(LazySingleton.class);
+
+        // 集群自动发现注入
+        bind(ClusterDiscoveryService.class).to(ClusterDiscoveryServiceImpl.class).in(LazySingleton.class);
     }
 }

@@ -1,6 +1,7 @@
 package com.hivemq.extensions.services.cluster;
 
 import com.hivemq.extension.sdk.api.annotations.NotNull;
+import com.hivemq.extension.sdk.api.services.cluster.parameter.ClusterNodeAddress;
 import com.hivemq.extensions.HiveMQExtension;
 import com.hivemq.extensions.HiveMQExtensions;
 import com.hivemq.extensions.executor.PluginOutPutAsyncer;
@@ -48,7 +49,8 @@ public class ClusterDiscoveryServiceImpl implements  ClusterDiscoveryService {
         final HiveMQExtension extension =
                 hiveMQExtensions.getExtension("hivemq-etcd-cluster-discovery-extension");
 
-        final ClusterDiscoveryInputImpl input = new ClusterDiscoveryInputImpl();
+        ClusterNodeAddress clusterNodeAddress = new ClusterNodeAddress("127.0.0.1", 9999);
+        final ClusterDiscoveryInputImpl input = new ClusterDiscoveryInputImpl(clusterNodeAddress);
         final ExtensionParameterHolder<ClusterDiscoveryInputImpl> inputHolder = new ExtensionParameterHolder<>(input);
 
         final ClusterDiscoveryOutputImpl output = new ClusterDiscoveryOutputImpl(asyncer);

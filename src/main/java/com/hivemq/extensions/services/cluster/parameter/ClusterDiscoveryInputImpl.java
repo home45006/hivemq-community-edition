@@ -16,8 +16,8 @@ public class ClusterDiscoveryInputImpl implements ClusterDiscoveryInput, PluginT
     private ClusterNodeAddress ownAddress;
     private String clusterId;
 
-    public ClusterDiscoveryInputImpl() {
-        ownAddress = new ClusterNodeAddress("127.0.0.1", 8000);
+    public ClusterDiscoveryInputImpl(ClusterNodeAddress clusterNodeAddress) {
+        ownAddress = clusterNodeAddress;
         clusterId = "cluster-test";
     }
 
