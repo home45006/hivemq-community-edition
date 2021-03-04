@@ -32,6 +32,7 @@ import com.hivemq.extension.sdk.api.annotations.Nullable;
 import com.hivemq.extension.sdk.api.services.admin.AdminService;
 import com.hivemq.extensions.ExtensionBootstrap;
 import com.hivemq.extensions.services.admin.AdminServiceImpl;
+import com.hivemq.extensions.services.cluster.ClusterDiscoveryServiceImpl;
 import com.hivemq.metrics.MetricRegistryLogger;
 import com.hivemq.migration.MigrationUnit;
 import com.hivemq.migration.Migrations;
@@ -65,18 +66,21 @@ public class HiveMQServer {
     private final @NotNull PublishPayloadPersistence payloadPersistence;
     private final @NotNull ExtensionBootstrap extensionBootstrap;
     private final @NotNull AdminService adminService;
+    private final @NotNull ClusterDiscoveryServiceImpl clusterDiscoveryService;
 
     @Inject
     HiveMQServer(
             final @NotNull HiveMQNettyBootstrap nettyBootstrap,
             final @NotNull PublishPayloadPersistence payloadPersistence,
             final @NotNull ExtensionBootstrap extensionBootstrap,
-            final @NotNull AdminService adminService) {
+            final @NotNull AdminService adminService,
+            final @NotNull ClusterDiscoveryServiceImpl clusterDiscoveryService) {
 
         this.nettyBootstrap = nettyBootstrap;
         this.payloadPersistence = payloadPersistence;
         this.extensionBootstrap = extensionBootstrap;
         this.adminService = adminService;
+        this.clusterDiscoveryService = clusterDiscoveryService;
     }
 
     public void start(final @Nullable EmbeddedExtension embeddedExtension) throws Exception {
@@ -94,6 +98,9 @@ public class HiveMQServer {
         Checkpoints.checkpoint("listener-started");
 
         new StartupListenerVerifier(startupInformation).verifyAndPrint();
+
+        // 注册cluster节点
+        clusterDiscoveryService.registerClusterNode();
 
         ((AdminServiceImpl) adminService).hivemqStarted();
     }
